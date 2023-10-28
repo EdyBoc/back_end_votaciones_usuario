@@ -24,7 +24,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "Usuario", schema = "votaciones")
+@Table(name = "Usuario", schema = "public")
 public class Usuario {
 
     @Id

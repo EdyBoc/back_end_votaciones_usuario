@@ -14,7 +14,7 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface UsuarioRepository extends CrudRepository<Usuario, Object>{
 
-    @Query(value = "select * from votaciones.Usuario u where u.usuario=? limit 1",
+    @Query(value = "select * from public.Usuario u where u.usuario=? limit 1",
             nativeQuery = true)
     public Usuario findUsuarioByusername(String username);
     
