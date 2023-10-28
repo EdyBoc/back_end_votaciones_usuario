@@ -61,7 +61,7 @@ public class UsuarioController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) throws JOSEException {
-        crearUsuarioAdmi();
+        //crearUsuarioAdmi();
         return ResponseEntity.ok(servicio.logueo(loginRequest)).getBody();
     }
 
